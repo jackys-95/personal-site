@@ -1,0 +1,128 @@
+/*
+ * CSS for both blog and projects section
+ * Needs refactor to separate 
+ * content is shared between blog and projects section
+ */
+
+.featured-blog-container {
+  display: flex;
+  width: 50%;
+  margin: auto;
+  flex-flow: column wrap;
+  flex: 1 1 100%;
+  padding-bottom: 4em;
+
+  @include min($tablet) {
+    padding-bottom: 8em;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.featured-projects-container {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1 1 100%;
+  padding-bottom: 4em;
+
+  @include min($tablet) {
+    padding-bottom: 8em;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.content-link {
+  display: inline-block;
+  padding: 15px;
+  flex: 0 0 100%;
+
+  &.content-link--50 {
+    flex: 1 1 100%;
+
+    @include min($tablet) {
+      flex: 0 0 50%;      
+    }
+  }
+}
+
+.content-link-wrapper {
+  transition: all 200ms ease;
+  transform: translateY(0);
+  background: transparent;
+  box-shadow: 0 0 0 rgba($black, 0);
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 14px rgba($black, 0.1);
+  }
+}
+
+.content-link-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.content-link-content {
+  position: relative;
+  z-index: 10;
+  border-radius: 4px;
+  width: 100%;
+  background: $white;
+  padding: 25px;
+}
+
+.link-content__header {
+  text-align: center;
+  margin-bottom: 0;
+  color: $black;
+  letter-spacing: 0;
+  line-height: 1.2;
+  font-size: 1.8rem;
+  font-weight: 400;
+  transition: color 300ms ease;
+
+  @include min($tablet) {
+    font-size: 2.4rem;      
+  }
+}
+
+.blog {
+  margin-top: 2em;
+  padding: 4em 0 4em;
+  background: $grey;
+
+  @include min($tablet) {
+    margin-top: 2em;
+    padding: 4em 0 4em;
+  }
+}
+
+.projects {
+  margin-top: 2em;
+  padding: 4em 0 4em;
+  background: $grey;
+
+  @include min($tablet) {
+    margin-top: 4em;
+    padding: 4em 0 8em;
+  }
+}
+
+.secondary-header {
+  display: flex;
+  flex: 1 1 100%;
+  margin-bottom: 0.5em;
+  letter-spacing: -1px;
+  font-size: 3rem;
+  font-weight: 400;
+
+  @include min($tablet) {
+    font-size: $h2-font-size;
+  }
+
+  &.header--white {
+    color: $white;
+  }
+}
