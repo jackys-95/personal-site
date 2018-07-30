@@ -81,7 +81,7 @@
   line-height: 1.2;
   font-size: 1.8rem;
   font-weight: 400;
-  transition: color 300ms ease;
+  transition: color 10s ease;
 
   @include min($tablet) {
     font-size: 2.4rem;      
