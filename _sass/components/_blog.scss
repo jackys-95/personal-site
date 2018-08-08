@@ -17,13 +17,14 @@
 
 .featured-blog-container {
   display: flex;
-  width: 50%;
-  margin: auto;
   flex-flow: column wrap;
   flex: 1 1 100%;
   padding-bottom: 3em;
+  margin: auto 10px;
 
   @include min($tablet) {
+    margin: auto;
+    width: 50%;
     padding-bottom: 6em;
     padding-left: 15px;
     padding-right: 15px;
@@ -82,9 +83,14 @@
 }
 
 .blog-image-container {
-  height: 210px;
-  width: 800px;
-  margin: 10px auto 15px;
+    height: 100px;
+    width: 100%;
+    margin: 10px auto 15px;
+
+  @include min($tablet) {
+    height: 210px;
+    width: 800px;
+  }
 }
 
 .blog-image {
@@ -137,7 +143,9 @@
 }
 
 #secondary-header-container {
-  width: 48%;
+  @include min($tablet) {
+    width: 48%;
+  }
 }
 
 .secondary-header {
