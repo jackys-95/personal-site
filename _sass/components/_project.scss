@@ -2,8 +2,26 @@
  * Project page styles.
  */
 
-.project {
-  padding-bottom: 8em;
+.projects {
+  padding: 0 0 2em;
+  background: $grey;
+
+  @include min($tablet) {
+    padding: 0 0 4em;
+  }
+}
+
+.featured-projects-container {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1 1 100%;
+  padding-bottom: 2em;
+
+  @include min($tablet) {
+    padding-bottom: 4em;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .project-hero {
@@ -102,5 +120,3 @@
   margin-bottom: 1em;
   line-height: 1.6;
 }
-
-

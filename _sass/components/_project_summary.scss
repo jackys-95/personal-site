@@ -1,0 +1,59 @@
+/*
+ Summary links for projects
+ */
+
+.content-link-content {
+  position: relative;
+  z-index: 10;
+  border-radius: 4px;
+  width: 100%;
+  background: $white;
+  padding: 25px;
+}
+
+.content-link-wrapper {
+  transition: all 200ms ease;
+  transform: translateY(0);
+  background: transparent;
+  box-shadow: 0 0 0 rgba($black, 0);
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 14px rgba($black, 0.1);
+  }
+}
+
+.content-link {
+  display: inline-block;
+  padding: 15px;
+  flex: 0 0 100%;
+
+  &.content-link--50 {
+    flex: 1 1 100%;
+
+    @include min($tablet) {
+      flex: 0 0 50%;      
+    }
+  }
+}
+
+.content-link-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.link-content__header {
+  text-align: center;
+  margin-bottom: 0;
+  color: $black;
+  letter-spacing: 0;
+  line-height: 1.2;
+  font-size: 1.8rem;
+  font-weight: 400;
+  transition: color 10s ease; /* I think this doesn't do anything, test more. */
+
+  @include min($tablet) {
+    font-size: 2.4rem;      
+  }
+}
