@@ -28,7 +28,7 @@
 }
 
 .hero__link {
-  color: $primary-light;
+  color: $twitch-purple;
   transition: color 250ms ease;
 
   &:hover,
@@ -39,7 +39,7 @@
 }
 
 .hero__link--second {
-  color: $primary-dark;
+  color: $github-green;
   transition: color 250ms ease;
 
   &:hover,
