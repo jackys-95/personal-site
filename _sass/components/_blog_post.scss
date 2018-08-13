@@ -1,0 +1,39 @@
+/*
+ CSS for blog post pages
+ */
+
+#blog-post-main-container {
+  margin: 15px auto 10px;
+}
+
+.wide-container {
+  width: 80%;
+}
+
+.narrow-container {
+  width: 50%;
+  margin: auto;
+}
+
+#blog-image-header {
+
+}
+
+#blog-post-header {
+  font-size: 3rem;
+  font-weight: 550;
+}
+
+#blog-post-subheader {
+  font-size: 1.5rem;
+  font-weight: 450;
+  font-style: italic;
+}
+
+#blog-post-content {
+  margin: 10px 0px;
+}
+
+div#blog-post-content > p {
+  font-weight: 250;
+}
